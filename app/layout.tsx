@@ -18,9 +18,9 @@ export const metadata: Metadata = {
     "Portfolio",
   ],
   authors: [{ name: "Younas Khan" }],
-  metadataBase: new URL("https://younaskhan.dev"),
+  metadataBase: new URL("https://younas-khan-portfolio.vercel.app"),
   alternates: {
-    canonical: "https://younaskhan.dev",
+    canonical: "https://younas-khan-portfolio.vercel.app/",
   },
   openGraph: {
     title: "Younas Khan | Full Stack Developer",
