@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://lovable.dev/opengraph-image-p98pqg.png",
+        url: "homepage.png",
       },
     ],
   },
