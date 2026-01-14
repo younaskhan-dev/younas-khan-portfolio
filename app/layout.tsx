@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     title: "Younas Khan | Full Stack Developer",
     description:
       "Full Stack Developer specializing in MERN Stack. Building modern web applications.",
-    images: ["https://lovable.dev/opengraph-image-p98pqg.png"],
+    images: ["homepage.png"],
   },
   icons: {
     icon: "/favicon.ico",
