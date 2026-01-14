@@ -21,13 +21,24 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const { theme, toggleTheme } = useTheme();
 
+  // Scroll detection for navbar
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
-    };
+    const handleScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // Smooth scroll with offset for fixed navbar
+  const handleLinkClick = (href: string) => {
+    const id = href.replace("#", "");
+    const element = document.getElementById(id);
+    if (element) {
+      const yOffset = -100; // adjust according to navbar height
+      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
+    setIsOpen(false); // close mobile menu
+  };
 
   return (
     <motion.header
@@ -67,6 +78,10 @@ export default function Navbar() {
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: index * 0.05 }}
+              onClick={(e) => {
+                e.preventDefault();
+                handleLinkClick(link.href);
+              }}
               className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors relative group"
             >
               {link.name}
@@ -92,9 +107,8 @@ export default function Navbar() {
           </motion.button>
 
           <Button {...({ variant: "hero", size: "sm", className: "hidden sm:flex", asChild: true } as any)}>
-            <a href="#contact">Let's Talk</a>
+            <a href="#contact" onClick={(e) => { e.preventDefault(); handleLinkClick("#contact"); }}>Let's Talk</a>
           </Button>
-
 
           {/* Mobile Menu Button */}
           <motion.button
@@ -130,13 +144,16 @@ export default function Navbar() {
               initial={{ x: -20, opacity: 0 }}
               animate={isOpen ? { x: 0, opacity: 1 } : { x: -20, opacity: 0 }}
               transition={{ delay: index * 0.05 }}
-              onClick={() => setIsOpen(false)}
+              onClick={() => {
+                setTimeout(() => setIsOpen(false), 400);
+              }}
               className="block px-4 py-3 rounded-xl text-foreground hover:bg-primary/10 hover:text-primary transition-colors font-medium"
             >
               {link.name}
             </motion.a>
           ))}
           <Button {...({ variant: "hero", className: "w-full mt-4", asChild: true } as any)}>
+            {/* <a href="#contact" onClick={(e) => { e.preventDefault(); handleLinkClick("#contact"); }}>Let's Talk</a> */}
             <a href="#contact">Let's Talk</a>
           </Button>
         </div>
