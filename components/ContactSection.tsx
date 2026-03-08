@@ -51,7 +51,7 @@ export default function ContactSection() {
     const formData = new FormData(e.target as HTMLFormElement);
     const data = Object.fromEntries(formData);
 
-    const res = await fetch("http://localhost:3000/api/contact", {
+    const res = await fetch("/api/contact", {
       method: "POST",
       body: JSON.stringify(data),
       headers: { "Content-Type": "application/json" },
