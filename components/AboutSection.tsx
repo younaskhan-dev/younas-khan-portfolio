@@ -10,13 +10,13 @@ const experiences = [
     icon: Briefcase,
     title: "Junior MERN Stack Developer",
     company: "Tech Solutions.",
-    period: "2025- Present",
+    period: "2025- 2026",
   },
   {
     icon: Briefcase,
     title: "Junior Web Designer",
     company: "Digital Agency",
-    period: "2024 -2025 ",
+    period: "2025 -2026 ",
   },
   {
     icon: GraduationCap,
@@ -24,6 +24,19 @@ const experiences = [
     company: "Abasyn University peshawar",
     period: "2024 - progress",
   },
+  {
+    icon: Briefcase,
+    title: "MERN Stack Developer",
+    company: "SyntexHub (Remote Internship)",
+    period: "2026- Present",
+  },
+  {
+    icon: Briefcase,
+    title: "Full Stack Developer",
+    company: "FentixTech (Remote Internship)",
+    period: "2026 -present ",
+  },
+ 
 ];
 
 const highlights = [
@@ -82,7 +95,7 @@ export default function AboutSection() {
                 transition={{ delay: 0.4, type: "spring" }}
                 className="absolute -bottom-6 -right-6 glass rounded-2xl p-4 shadow-lg"
               >
-                <div className="text-3xl font-heading font-bold gradient-text">1+</div>
+                <div className="text-3xl font-heading font-bold gradient-text">2+</div>
                 <div className="text-xs text-muted-foreground">Year Exp.</div>
               </motion.div>
             </div>

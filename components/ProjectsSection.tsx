@@ -10,54 +10,54 @@ const projects = [
     description:
       "TextUtils is a powerful and user-friendly text processing web application built using React.js...",
     image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&q=80", // code editor with colorful syntax
-    tags: ["React", "Node.js", "bootstrap", "express"],
+    tags: ["React", "Node.js", "bootstrap","tailwind css", "express","next.js","text processing","text manipulation"],
     liveUrl: "https://www.linkedin.com/in/younaskhanofficial/",
-    githubUrl: "https://github.com/younaskhan-dev",
+    githubUrl: "https://github.com/younaskhan-dev/textutils",
   },
   {
     title: "iNotebook – Secure Notes App",
     description:
       "iNotebook is a full-featured MERN stack application that allows users to securely create, edit, and organize notes...",
     image: "https://images.unsplash.com/photo-1517842645767-c639042777db?w=800&q=80", // person taking notes on laptop
-    tags: ["React.js", "express.js", "mongoDB", "Node.js"],
+    tags: ["express.js", "mongoDB", "Node.js","next.js","cloud storage","cloudinary","JWT Authentication"],
     liveUrl: "https://www.linkedin.com/in/younaskhanofficial/",
-    githubUrl: "https://github.com/younaskhan-dev",
+    githubUrl: "http://github.com/younaskhan-dev/iNotebook",
   },
   {
     title: "Newswave Web App",
     description:
       "NewsWave is a modern React.js news application that fetches real-time headlines...",
     image: "https://images.unsplash.com/photo-1495020689067-958852a7765e?w=800&q=80", // news on tablet/phone
-    tags: ["React", "Fetch API", "Express", "API Integration"],
+    tags: ["React", "Fetch API", "Express", "API Integration","next.js","News App","AI Summarization","speaker mode"],
     liveUrl: "https://www.linkedin.com/in/younaskhanofficial/",
-    githubUrl: "https://github.com/younaskhan-dev",
+    githubUrl: "https://github.com/younaskhan-dev/NewsMonkey",
   },
   {
-    title: "HelpDesk Modern UI",
+    title: "image-metadata-saas",
     description:
-      "HelpDesk is a clean and user-friendly help section design built with Bootstrap and custom CSS...",
-    image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80", // customer service/support team
-    tags: ["Bootstrap", "custom css", "react.js", "Responsive"],
+      "A modern full-stack SaaS application for uploading, viewing, editing, and managing image metadata ....",
+    image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80", // image management dashboard
+    tags: ["MongoDB", "Cloudinary","Next.js","Express","SaaS","Image Metadata","Cloud Storage","JWT Authentication"],
     liveUrl: "https://www.linkedin.com/in/younaskhanofficial/",
-    githubUrl: "https://github.com/younaskhan-dev",
+    githubUrl: "https://github.com/younaskhan-dev/image-metadata-saas",
   },
   {
-    title: "MobiCart – Mobile E-Commerce UI",
+    title: "Weather-Web-app",
     description:
-      "MobiCart is a responsive frontend eCommerce website designed for mobile devices...",
-    image: "https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=800&q=80", // online shopping on mobile
-    tags: ["Bootstrap", "custom css", "E-Commerce UI", "UI/UX"],
+      "A modern weather application built with Next.js and integrated with a weather API...",
+    image: "https://images.unsplash.com/photo-1501973801540-537f08ccae7b?w=800&q=80", // weather dashboard preview
+    tags: ["Next.js", "API Integration", "Responsive Design", "real data fetching", "weather app", "dynamic theming"],
     liveUrl: "https://www.linkedin.com/in/younaskhanofficial/",
-    githubUrl: "https://github.com/younaskhan-dev",
+    githubUrl: "https://github.com/younaskhan-dev/Weather-Web-app",
   },
   {
-    title: "Foodio – Food Ordering UI",
+    title: "hunting-coders",
     description:
-      "Foodio is a modern frontend food ordering website built with HTML, CSS, JS, and Bootstrap...",
-    image: "https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=800&q=80", // food/healthy meal
-    tags: ["custom css", "UI/UX", "JavaScript", "Bootstrap"],
+      "A curated platform and repository for React.js, designed to help developers level up their skills....",
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80", // developer workspace preview
+    tags: ["custom css", "UI/UX", "JavaScript", "Bootstrap","tailwind css","next.js","react.js","developer resources"],
     liveUrl: "https://www.linkedin.com/in/younaskhanofficial/",
-    githubUrl: "https://github.com/younaskhan-dev",
+    githubUrl: "https://github.com/younaskhan-dev/hunting-coders",
   },
 ];
 
