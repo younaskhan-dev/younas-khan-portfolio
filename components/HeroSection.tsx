@@ -50,7 +50,7 @@ export default function HeroSection() {
             Hi, I'm{" "}
             <span className="gradient-text">Younas Khan</span>
             <br />
-            <span className="text-muted-foreground">MERN Stack Developer</span>
+            <span className="text-muted-foreground">Full Stack Developer (MERN & .NET)</span>
           </motion.h1>
 
           {/* Sub-headline */}
@@ -61,8 +61,8 @@ export default function HeroSection() {
             className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 text-balance"
           >
             Crafting exceptional digital experiences with modern web technologies.
-            Specializing in <span className="text-primary font-medium">MERN Stack</span>,
-            building scalable applications that make an impact.
+            Specializing in <span className="text-primary font-medium">MERN Stack</span> and <span className="text-primary font-medium">.NET</span>,
+            building scalable, production-ready applications that make an impact.
           </motion.p>
 
           {/* CTA Buttons */}

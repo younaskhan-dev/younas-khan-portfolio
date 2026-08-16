@@ -20,7 +20,7 @@ const services = [
     icon: Database,
     title: "Full Stack Development",
     description: "End-to-end development from database design to frontend implementation with seamless integration.",
-    features: ["MERN Stack", "APIs & SQL", "vercel Deployment"],
+    features: ["MERN & .NET Stack", "APIs & SQL", "Vercel Deployment"],
   },
   {
     icon: Plug,

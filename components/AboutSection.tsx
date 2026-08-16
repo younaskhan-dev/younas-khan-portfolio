@@ -8,35 +8,46 @@ import { GraduationCap, Briefcase, Award, Code } from "lucide-react";
 const experiences = [
   {
     icon: Briefcase,
-    title: "Junior MERN Stack Developer",
-    company: "Tech Solutions.",
-    period: "2025- 2026",
+    title: ".NET & MERN Stack Developer",
+    company: "ArkIT Services — Onsite, Gulberg Greens, Islamabad",
+    period: "Jun 2026 – Present",
   },
   {
     icon: Briefcase,
-    title: "Junior Web Designer",
-    company: "Digital Agency",
-    period: "2025 -2026 ",
-  },
-  {
-    icon: GraduationCap,
-    title: "BS Software Engineering",
-    company: "Abasyn University peshawar",
-    period: "2024 - progress",
+    title: "Full Stack Engineer Intern",
+    company: "CodeAlpha (Remote)",
+    period: "May 2026 – Jul 2026",
   },
   {
     icon: Briefcase,
     title: "MERN Stack Developer",
     company: "SyntexHub (Remote Internship)",
-    period: "2026- Present",
+    period: "Feb 2026 – Apr 2026",
   },
   {
     icon: Briefcase,
     title: "Full Stack Developer",
     company: "FentixTech (Remote Internship)",
-    period: "2026 -present ",
+    period: "May 2026 – Jun 2026",
   },
- 
+  {
+    icon: Briefcase,
+    title: "Junior MERN Stack Developer",
+    company: "Tech Solutions",
+    period: "2025 – 2026",
+  },
+  {
+    icon: Briefcase,
+    title: "Junior Web Designer",
+    company: "Digital Agency",
+    period: "2025 – 2026",
+  },
+  {
+    icon: GraduationCap,
+    title: "BS Software Engineering",
+    company: "Abasyn University Peshawar",
+    period: "2024 – Present",
+  },
 ];
 
 const highlights = [
@@ -109,19 +120,17 @@ export default function AboutSection() {
             className="space-y-6"
           >
             <h3 className="font-heading text-2xl sm:text-3xl font-bold text-foreground">
-              Web Designer & <span className="gradient-text">MERN Specialist</span>
+              Full Stack Developer <span className="gradient-text">— MERN & .NET</span>
             </h3>
 
             <p className="text-muted-foreground leading-relaxed">
-              I'm a passionate MERN Stack Developer with over  1 years of experience in building
-              modern web applications. I specialize in the MERN stack (MongoDB, Express.js, React, Node.js)
-              and love creating seamless user experiences.
+              I'm a passionate Full Stack Developer with over 2 years of experience building modern web applications across both the MERN stack (MongoDB, Express.js, React, Node.js) and the .NET stack (ASP.NET Core, Entity Framework Core, SQL Server). I love creating seamless user experiences and clean, maintainable, production-ready systems.
             </p>
 
             <p className="text-muted-foreground leading-relaxed">
               My journey in tech started with a curiosity for how things work on the web.
               Today, I help businesses transform their ideas into powerful digital solutions
-              that drive growth and engagement.
+              that drive growth, efficiency, and engagement.
             </p>
 
             {/* Highlights */}
@@ -148,24 +157,26 @@ export default function AboutSection() {
             {/* Experience Timeline */}
             <div className="space-y-4 pt-6">
               <h4 className="font-heading font-semibold text-foreground">Experience & Education</h4>
-              {experiences.map((exp, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, x: 20 }}
-                  animate={isInView ? { opacity: 1, x: 0 } : {}}
-                  transition={{ delay: 0.4 + index * 0.1 }}
-                  className="flex items-center gap-4 p-3 rounded-xl hover:bg-card transition-colors"
-                >
-                  <div className="p-2 rounded-lg gradient-primary">
-                    <exp.icon className="w-4 h-4 text-primary-foreground" />
-                  </div>
-                  <div className="flex-1">
-                    <div className="font-medium text-foreground">{exp.title}</div>
-                    <div className="text-sm text-muted-foreground">{exp.company}</div>
-                  </div>
-                  <div className="text-xs text-muted-foreground">{exp.period}</div>
-                </motion.div>
-              ))}
+              <div className="relative space-y-3 before:absolute before:left-[18px] before:top-2 before:bottom-2 before:w-px before:bg-border">
+                {experiences.map((exp, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, x: 20 }}
+                    animate={isInView ? { opacity: 1, x: 0 } : {}}
+                    transition={{ delay: 0.4 + index * 0.08 }}
+                    className="relative flex items-start gap-4 rounded-2xl border border-border bg-card/70 p-4 shadow-sm hover:border-primary/30 hover:bg-card transition-all duration-300"
+                  >
+                    <div className="relative z-10 mt-1 flex h-9 w-9 items-center justify-center rounded-xl gradient-primary shadow-sm">
+                      <exp.icon className="w-4 h-4 text-primary-foreground" />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <div className="font-medium text-foreground">{exp.title}</div>
+                      <div className="text-sm text-muted-foreground">{exp.company}</div>
+                    </div>
+                    <div className="text-xs text-muted-foreground whitespace-nowrap pt-1">{exp.period}</div>
+                  </motion.div>
+                ))}
+              </div>
             </div>
           </motion.div>
         </div>

@@ -6,14 +6,17 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Younas Khan | Full Stack Developer & MERN Specialist",
+  title: "Younas Khan | Full Stack Developer — MERN & .NET",
   description:
-    "Younas Khan - Full Stack Developer specializing in MERN Stack, React, Node.js. Building modern web applications with exceptional user experiences.",
+    "Younas Khan - Full Stack Developer specializing in MERN Stack and .NET (ASP.NET Core, EF Core). Building modern web applications with exceptional user experiences.",
   keywords: [
     "Full Stack Developer",
     "MERN Stack",
+    ".NET",
+    "ASP.NET Core",
     "React",
     "Node.js",
+    "Entity Framework Core",
     "Web Developer",
     "Portfolio",
   ],
@@ -22,10 +25,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://younas-khan-portfolio.vercel.app/",
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: {
-    title: "Younas Khan | Full Stack Developer",
+    title: "Younas Khan | Full Stack Developer — MERN & .NET",
     description:
-      "Full Stack Developer specializing in MERN Stack. Building modern web applications with exceptional user experiences.",
+      "Full Stack Developer specializing in MERN Stack and .NET. Building modern, production-ready web applications.",
     type: "website",
     images: [
       {
@@ -35,9 +42,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Younas Khan | Full Stack Developer",
+    title: "Younas Khan | Full Stack Developer — MERN & .NET",
     description:
-      "Full Stack Developer specializing in MERN Stack. Building modern web applications.",
+      "Full Stack Developer specializing in MERN Stack and .NET. Building modern, production-ready web applications.",
     images: ["homepage.png"],
   },
   icons: {

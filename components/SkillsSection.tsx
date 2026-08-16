@@ -19,8 +19,19 @@ const skillCategories = [
       { name: "Node.js", level: 90 },
       { name: "Express.js", level: 88 },
       { name: "MongoDB", level: 80 },
-      { name: "SQL DataBase", level: 70 },
+      { name: "SQL Server", level: 80 },
       { name: "APIs Handling", level: 82 },
+    ],
+  },
+  {
+    title: ".NET Development",
+    skills: [
+      { name: "ASP.NET Core", level: 85 },
+      { name: "Entity Framework Core", level: 80 },
+      { name: "C#", level: 80 },
+      { name: "SQL Server", level: 80 },
+      { name: "Clean Architecture", level: 75 },
+      { name: "SignalR", level: 70 },
     ],
   },
   {
@@ -28,8 +39,10 @@ const skillCategories = [
     skills: [
       { name: "Git", level: 90 },
       { name: "GitHub", level: 95 },
-      { name: "vercel", level: 90 },
+      { name: "Vercel", level: 90 },
       { name: "VS Code", level: 95 },
+      { name: "Visual Studio", level: 80 },
+      { name: "IIS / Staging Deployment", level: 75 },
       { name: "Figma", level: 80 },
     ],
   },
